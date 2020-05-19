@@ -5,8 +5,16 @@ fs.readFile('input.txt', function (err, data) {
        return console.error(err);
     }
     console.log("Asynchronous read: " + data.toString());
-    for (var i = 0; i < data.toString().length; i++) {
+    var newArray = data.toString().split("")
+    console.log(newArray)
+
+/*
+
+    for (var i = 0; i < newArray.length; i++) {
         console.log(data.toString().charAt(i) + ',');
+        fs.writefile
+        
       }
  });
-
+*/
+});
